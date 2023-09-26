@@ -65,7 +65,7 @@
                     <div class="ppl px-20 py-30">
                         <h3 class="maiusc">playlist</h3>
                         <div class="py-15">
-                            <i class="fa-sharp fa-solid fa-square-plus v-middle"></i>
+                            <i class="fa-sharp fa-solid fa-square-plus v-middle txt-grey"></i>
                             <span class="v-middle txt-grey px-10">Create Playlist</span>
                         </div>
                         <ul>
@@ -94,14 +94,16 @@
                 <!-- user -->
                 <div class="wb px-20">
                     <div class="download py-10">
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                        <span class="txt-grey fs-little px-10">Installa App</span>
+                        <i class="fa-solid fa-cloud-arrow-down txt-grey"></i>
+                        <a href="#" class="txt-grey fs-little px-10">Installa App</a>
                     </div>
                     <div class="user py-10 d-flex a-center">
                         <div class="profile circle bg-grey d-flex j-center">
-                            <img class="icon v-middle" src="spotify/img/profile.svg" alt="profile">
+                            <img class="icon" src="spotify/img/profile.svg" alt="profile">
                         </div>
-                        <h3 class="px-10">John Doe</h3>
+                        <h3>
+                            <a href="#" class="px-10 txt-light">John Doe</a>
+                        </h3>
                     </div>
                 </div>
             </nav>
@@ -134,7 +136,7 @@
                                 </div>
                                 <div class="card-text txt-center">
                                     <h3 class="py-15">Heavy Metal</h3>
-                                    <h4 class="fw-400">Subtitle</h4>
+                                    <h4 class="fw-400 fs-little txt-grey">Subtitle</h4>
                                 </div>
                             </div>
 
@@ -144,7 +146,7 @@
                                 </div>
                                 <div class="card-text txt-center">
                                     <h3 class="py-15">Stranger Things, Vol.1 (a Netflix Original Seies Soundtrack)</h3>
-                                    <h4 class="fw-400">Kyle Dixon & Michel Stein</h4>
+                                    <h4 class="fw-400 fs-little txt-grey">Kyle Dixon & Michel Stein</h4>
                                 </div>
                             </div>
 
@@ -154,7 +156,7 @@
                                 </div>
                                 <div class="card-text txt-center">
                                     <h3 class="py-15">A quiet place</h3>
-                                    <h4 class="fw-400">Subtitle</h4>
+                                    <h4 class="fw-400 fs-little txt-grey">Subtitle</h4>
                                 </div>
                             </div>
 
@@ -164,7 +166,7 @@
                                 </div>
                                 <div class="card-text txt-center">
                                     <h3 class="py-15">Split</h3>
-                                    <h4 class="fw-400">Subtitle</h4>
+                                    <h4 class="fw-400 fs-little txt-grey">Subtitle</h4>
                                 </div>
                             </div>
 
@@ -174,7 +176,7 @@
                                 </div>
                                 <div class="card-text txt-center">
                                     <h3 class="py-15">A cure for wellness</h3>
-                                    <h4 class="fw-400">Subtitle</h4>
+                                    <h4 class="fw-400 fs-little txt-grey">Subtitle</h4>
                                 </div>
                             </div>
 
@@ -184,7 +186,7 @@
                                 </div>
                                 <div class="card-text txt-center">
                                     <h3 class="py-15">Sinister</h3>
-                                    <h4 class="fw-400">Subtitle</h4>
+                                    <h4 class="fw-400 fs-little txt-grey">Subtitle</h4>
                                 </div>
                             </div>
 
@@ -198,7 +200,7 @@
 
                         <h2 class="fw-600 px-10">Created for John Doe</h2>
 
-                        <h4 class="txt-grey px-10 py-15">Più ascolti, più accurati saranno i suggerimenti</h4>
+                        <h4 class="txt-grey px-10 py-15 fs-little">Più ascolti, più accurati saranno i suggerimenti</h4>
 
                         <div class="row d-flex py-15">
 
@@ -229,7 +231,7 @@
 
                         <h2 class="fw-600 px-10">Artisti più popolari</h2>
 
-                        <h4 class="txt-grey px-10 py-15">Più ascolti, più accurati saranno i suggerimenti</h4>
+                        <h4 class="txt-grey px-10 py-15 fs-little">Più ascolti, più accurati saranno i suggerimenti</h4>
 
                         <div class="row d-flex py-15">
 
@@ -258,7 +260,58 @@
             </section>
         </main>
 
-        <div class="bg-dark" id="play-bar">playbar
+        <div class="bg-dark d-flex j-between a-center px-20" id="play-bar">
+
+            <div class="left">
+                <div class="d-flex a-center">
+                    <div class="song-img">
+                        <img class="fluid" src="spotify/img/sinister.jpeg" alt="sinister">
+                    </div>
+                    <div class="song-info px-10">
+                        <h5>Sinister</h5>
+                        <div class="txt-grey fs-little">Song Name</div>
+                    </div>
+                    <div class="px-20">
+                        <i class="fa-regular fa-heart txt-grey px-10"></i>
+                        <i class="fa-regular fa-folder txt-grey"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="play-btn">
+                    <ul class="d-flex a-center j-center">
+                        <li class="px-10">
+                            <a href="#"><i class="fa-solid fa-shuffle txt-light"></i></a>
+                        </li>
+                        <li class="px-10">
+                            <a href="#"><i class="fa-solid fa-backward-step txt-light"></i></a>
+                        </li>
+                        <li class="px-10">
+                            <a href="#"><i class="fa-regular fa-circle-play txt-light"></i></a>
+                        </li>
+                        <li class="px-10">
+                            <a href="#"><i class="fa-solid fa-forward-step txt-light"></i></a>
+                        </li>
+                        <li class="px-10">
+                            <a href="#"><i class="fa-solid fa-rotate-right txt-light"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="time-bar d-flex j-between a-center py-10">
+                    <div>
+                        0:25
+                    </div>
+                    <input type="range">
+                    <div>
+                        4:35
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                i
+            </div>
         </div>
     </div>
     

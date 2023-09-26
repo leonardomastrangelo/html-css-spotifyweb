@@ -50,10 +50,6 @@ h3
 {
     font-size: 1.3em;
 }
-h4
-{
-    font-size: 0.85em;
-}
 .txt-grey
 {
     color: var(--color-light-grey);
@@ -230,18 +226,13 @@ main
 {
     display: none;
 }
-#side-bar .icon
+.icon
 {
-    width: 35px;
+    width: 30px;
 }
 .fa-sharp.fa-solid.fa-square-plus
 {
     font-size: 2.8em;
-    color: var(--color-light-grey);
-}
-.fa-solid.fa-cloud-arrow-down
-{
-    color: var(--color-grey);
 }
 .user
 {
@@ -249,7 +240,39 @@ main
 }
 .profile
 {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
+
+/* PLAY BAR */
+.song-img
+{
+    width: 60px;
+}
+.fa-regular.fa-circle-play
+{
+    font-size: 2em;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--color-light-grey);
+    cursor: pointer;
+    width: 70%;
+    height: 3px;
+    border-radius: 1.5px;  
+  }
+/* .left
+{
+    width: 20%;
+}
+.right
+{
+    width: 20%;
+}
+*/
+.middle
+{
+    width: 35%;
+} 
 
