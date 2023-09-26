@@ -171,6 +171,7 @@ main
 .fluid
 {
     width: 100%;
+    display: block;
 }
 
 /* top-bar */
