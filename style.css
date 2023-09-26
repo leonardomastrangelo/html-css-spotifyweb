@@ -1,0 +1,100 @@
+/* reset */
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* palette */
+:root {
+	--color-dark-color: #141922;
+	--color-dark-grey: #282828;
+	--color-black: #000000;
+	--color-white: #FFFFFF;
+	--color-grey: #717171;
+	--color-light-grey: #C1C1C1;
+	--color-highlight: #ADFF2F;
+}
+
+/* UTILITIES */
+
+/* background */
+.bg-darker
+{
+    background-color: var(--color-black);
+}
+.bg-main
+{
+    background-color: var(--color-dark-color);
+}
+.bg-dark
+{
+    background-color: var(--color-dark-grey);
+}
+
+/* text */
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.txt-grey
+{
+    color: var(--color-highlight);
+}
+.txt-center
+{
+    text-align: center;
+}
+
+/* flex-utility */
+.d-flex
+{
+    display: flex;
+}
+
+/* CONTAINERS */
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+main
+{
+    width: 100%;
+    height: calc(100% - 90px);
+}
+
+#side-bar
+{
+    width: 250px;
+}
+
+#main-content
+{
+    width: calc(100% - 250px);
+    overflow-y: auto;
+    padding: 90px 10px 0 10px;
+}
+
+#call
+{
+    width: calc(100% - 250px);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#play-bar
+{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+}
+
+
+
