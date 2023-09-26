@@ -31,6 +31,10 @@
 {
     background-color: var(--color-dark-grey);
 }
+.bg-grey
+{
+    background-color: var(--color-grey);
+}
 
 /* text */
 body
@@ -62,6 +66,10 @@ h4
 {
     text-align: center;
 }
+.fs-little
+{
+    font-size: 0.85em;
+}
 .fw-400
 {
     font-weight: 400;
@@ -77,6 +85,10 @@ h4
 .maiusc
 {
     text-transform: uppercase;
+}
+.v-middle
+{
+    vertical-align: middle;
 }
 ul, a
 {
@@ -119,9 +131,21 @@ ul, a
 {
     display: flex;
 }
+.col-flex
+{
+    flex-direction: column;
+}
 .j-center
 {
     justify-content: center;
+}
+.j-between
+{
+    justify-content: space-between;
+}
+.a-center
+{
+    align-items: center;
 }
 
 /* CONTAINERS */
@@ -129,25 +153,23 @@ ul, a
     width: 100%;
     height: 100vh;
 }
-
 main
 {
     width: 100%;
     height: calc(100% - 90px);
 }
-
 #side-bar
 {
     width: 250px;
+    position: relative;
+    overflow-y: auto;
 }
-
 #main-content
 {
     width: calc(100% - 250px);
     overflow-y: auto;
     padding: 90px 10px 0 10px;
 }
-
 #call
 {
     width: calc(100% - 250px);
@@ -157,7 +179,6 @@ main
     right: 0;
     background-color: rgba(0, 0, 0, 0.3);
 }
-
 #play-bar
 {
     width: 100%;
@@ -167,14 +188,13 @@ main
     bottom: 0;
     left: 0;
 }
-
 .fluid
 {
     width: 100%;
     display: block;
 }
 
-/* top-bar */
+/* CALL TO ACTION */
 .btn
 {
     border: 1px solid var(--color-white);
@@ -199,5 +219,37 @@ main
 {
     height: 100%;
     object-fit: cover;
+}
+
+/* SIDE BAR */
+#logo
+{
+    width: 190px;
+}
+#small-logo
+{
+    display: none;
+}
+#side-bar .icon
+{
+    width: 35px;
+}
+.fa-sharp.fa-solid.fa-square-plus
+{
+    font-size: 2.8em;
+    color: var(--color-light-grey);
+}
+.fa-solid.fa-cloud-arrow-down
+{
+    color: var(--color-grey);
+}
+.user
+{
+    border-top: 1px solid var(--color-white);
+}
+.profile
+{
+    width: 50px;
+    height: 50px;
 }
 
