@@ -285,3 +285,13 @@ main {
     border-radius: 50%;
     display: none;
 }
+
+/* MEDIA QUERY */
+@media screen and (max-width:1200px){
+    .wrap{
+        flex-wrap: wrap;
+    }
+    #main-content .col{
+        width: calc(100% / 4);
+    }
+}
