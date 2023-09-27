@@ -494,8 +494,65 @@ a:hover,
 #daily #main-content
 {
     background: var(--bg-radiant, linear-gradient(180deg, rgba(128, 196, 196, 0.78) 0%, rgba(79, 0, 248, 0.71) 98.96%));
+    padding-left: 0;
+    padding-right: 0;
 }
 #daily h1
 {
     font-size: 4em;
+}
+#daily #main-content ul li
+{
+    padding: 0 10px;
+}
+#daily .actions i
+{
+    font-size: 3.8em;
+    cursor: pointer;
+}
+#daily .table .col
+{
+    width: calc(100% / 4);
+}
+#daily header
+{
+    border-bottom: 1px solid var(--color-grey);
+}
+.f-end
+{
+    justify-content: flex-end;
+}
+#daily .sx .col
+{
+    width: calc(100% / 2);
+}
+#daily .sx
+{
+    width: 50%;
+}
+#daily .dx
+{
+    width: 50%;
+}
+#daily .fa-solid.fa-play
+{
+    display: none; 
+}
+#daily .row:hover
+{
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+}
+#daily .row:hover .number
+{
+    display: none;
+}
+#daily .row:hover .fa-solid.fa-play
+{
+    display: block;
+    color: var(--color-highlight);
+}
+#daily .table span:hover 
+{
+    text-decoration: underline;
 }
