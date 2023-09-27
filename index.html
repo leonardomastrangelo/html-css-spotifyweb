@@ -39,12 +39,13 @@
                     </div>
                     <img class="px-20 py-15" id="small-logo" src="spotify/img/logo-small.svg" alt="logo">
                     <!-- explore menù -->
-                    <ul class="px-20">
+                    <ul class="explore px-20">
                         <li>
                             <a href="#">
                                 <img class="v-middle icon" src="spotify/img/home.svg" alt="home">
                                 <span class="v-middle txt-light fs-little">Home</span>
                             </a>
+                            <div class="v-line bg-high"></div>
                         </li>
                         <li class="py-10">
                             <a href="#">
@@ -114,13 +115,31 @@
                 <nav>
 
                     <!-- Discover -->
-                    <ul class="d-flex j-center a-center wrap">
-                        <li><a class="txt-grey maiusc fw-500" href="#">In Evidenza</a></li>
-                        <li><a class="txt-grey maiusc fw-500" href="#">Podcast</a></li>
-                        <li><a class="txt-grey maiusc fw-500" href="#">Classifiche</a></li>
-                        <li><a class="txt-grey maiusc fw-500" href="#">Generi e Mood</a></li>
-                        <li><a class="txt-grey maiusc fw-500" href="#">Nuove Uscite</a></li>
-                        <li><a class="txt-grey maiusc fw-500" href="#">Scopri</a></li>
+                    <ul class="discover d-flex j-center a-center wrap">
+                        <li>
+                            <a class="txt-grey maiusc fw-500" href="#">In Evidenza</a>
+                            <div class="underline bg-high active"></div>
+                        </li>
+                        <li>
+                            <a class="txt-grey maiusc fw-500" href="#">Podcast</a>
+                            <div class="underline bg-high"></div>
+                        </li>
+                        <li>
+                            <a class="txt-grey maiusc fw-500" href="#">Classifiche</a>
+                            <div class="underline bg-high"></div>
+                        </li>
+                        <li>
+                            <a class="txt-grey maiusc fw-500" href="#">Generi e Mood</a>
+                            <div class="underline bg-high"></div>
+                        </li>
+                        <li>
+                            <a class="txt-grey maiusc fw-500" href="#">Nuove Uscite</a>
+                            <div class="underline bg-high"></div>
+                        </li>
+                        <li>
+                            <a class="txt-grey maiusc fw-500" href="#">Scopri</a>
+                            <div class="underline bg-high"></div>
+                        </li>
                     </ul>
 
                     <!-- RECENTLY PLAYED -->
@@ -220,7 +239,7 @@
 
                         <h4 class="txt-grey px-10 py-15 fs-little">Più ascolti, più accurati saranno i suggerimenti</h4>
 
-                        <div class="row d-flex py-15">
+                        <div class="row d-flex py-15 wrap">
 
                             <div class="col px-10 py-10">
                                 <div class="card-img">
@@ -257,7 +276,7 @@
 
                         <h4 class="txt-grey px-10 py-15 fs-little">Più ascolti, più accurati saranno i suggerimenti</h4>
 
-                        <div class="row d-flex py-15">
+                        <div class="row d-flex wrap py-15">
 
                             <div class="col px-10 py-10">
                                 <div class="card-img circle">
@@ -300,7 +319,7 @@
                     </div>
                     <div class="song-info px-10">
                         <h5>Sinister</h5>
-                        <div class="txt-grey fs-little">Song Name</div>
+                        <a href="#" class="txt-grey fs-little">Song Name</a>
                     </div>
                     <div class="px-20">
                         <i class="fa-regular fa-heart txt-grey px-10"></i>
