@@ -189,6 +189,7 @@ main {
     z-index: 1000;
     bottom: 0;
     left: 0;
+    justify-content: space-between;
 }
 
 .fluid {
@@ -293,5 +294,26 @@ main {
     }
     #main-content .col{
         width: calc(100% / 4);
+    }
+}
+@media screen and (max-width:992px){
+    #main-content .col{
+        width: 50%;
+    }
+    #play-bar .left, .right{
+        display: none;
+    }
+    #play-bar
+    {
+        justify-content: center;
+    }
+    .middle
+    {
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px){
+    #main-content .col{
+        width: 50%;
     }
 }
