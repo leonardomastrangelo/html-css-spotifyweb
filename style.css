@@ -253,7 +253,6 @@ main {
 .song-img {
     width: 60px;
 }
-
 .fa-regular.fa-circle-play {
     font-size: 2em;
 }
@@ -322,10 +321,6 @@ main {
     }
 }
 @media screen and (max-width: 576px){
-    .a-content
-    {
-        align-content: center;
-    }
     .ppl, #logo
     {
         display: none;
@@ -333,7 +328,7 @@ main {
     #small-logo
     {
         display: block;
-        width: 70px;
+        width: 40px;
     }
     #side-bar span
     {
@@ -342,10 +337,21 @@ main {
     #side-bar
     {
         width: 60px;
+        align-items: center;   
+    }
+    #side-bar .download
+    {
+        justify-content: center;
+    }
+    #side-bar .px-20
+    {
+        padding-left: 5px;
+        padding-right: 5px;
     }
     #call, #main-content
     {
         width: calc(100% - 60px);
     }
+
 }
     
