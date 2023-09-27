@@ -65,7 +65,6 @@ h3 {
 .txt-center {
     text-align: center;
 }
-
 .fs-little {
     font-size: 0.85em;
 }
@@ -203,21 +202,58 @@ main {
     border: 1px solid var(--color-white);
     padding: 10px 50px;
     position: absolute;
-    right: 25px;
+    right: 30px;
     top: 15px;
     border-radius: 30px;
+    transition: all 0.5s ease-out;
+}
+.btn:hover {
+    transform: scale(1.1);
+    background: var(--btn-strange, linear-gradient(180deg, rgba(72, 203, 69, 0.70) 0%, rgba(217, 234, 27, 0.87) 54.53%, rgba(32, 202, 29, 0.70) 100%));
+    color: var(--color-black);
 }
 
 /* MAIN CONTENT */
 #main-content .col {
-    width: calc(100% / 6)
+    width: calc(100% / 6);
+    cursor: pointer;
 }
-
+.card-img
+{
+    position: relative;
+}
+/* overlay hover */
+.overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.col:hover .overlay
+{
+    opacity: 1;
+}
+.overlay
+.fa-regular.fa-circle-play
+{
+    font-size: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.fa-regular.fa-circle-play:hover
+{
+    color: var(--color-highlight);
+    transform: scale(1.5);
+}
+/* circle */
 .circle {
     border-radius: 50%;
     overflow: hidden;
 }
-
 .circle img {
     height: 100%;
     object-fit: cover;
@@ -227,28 +263,22 @@ main {
 #logo {
     width: 190px;
 }
-
 #small-logo {
     display: none;
 }
-
 .icon {
     width: 30px;
 }
-
 .fa-sharp.fa-solid.fa-square-plus {
     font-size: 2.8em;
 }
-
 .user {
     border-top: 1px solid var(--color-white);
 }
-
 .profile {
     width: 30px;
     height: 30px;
 }
-
 /* PLAY BAR */
 .song-img {
     width: 60px;
@@ -305,7 +335,7 @@ main {
     }
     #play-bar
     {
-        justify-content: center;
+        justify-content: space-around;
     }
     .middle
     {
@@ -352,6 +382,5 @@ main {
     {
         width: calc(100% - 60px);
     }
-
 }
     
