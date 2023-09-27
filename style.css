@@ -253,12 +253,12 @@ a:hover,
     opacity: 1;
 }
 
-.overlay .fa-regular .fa-circle-play {
+.overlay .fa-regular.fa-circle-play {
     font-size: 50px;
     transition: all 1s ease-in-out;
 }
 
-.overlay .fa-regular.fa-circle-play:hover {
+.fa-regular.fa-circle-play:hover {
     color: var(--color-highlight);
     transform: scale(1.5);
 }
@@ -333,7 +333,7 @@ a:hover,
     width: 60px;
 }
 
-.fa-regular.fa-circle-play {
+#play-bar .fa-regular.fa-circle-play {
     font-size: 2em;
 }
 
@@ -487,4 +487,15 @@ a:hover,
         width: 100%;
     }
     
+}
+
+
+/* DAILY MIX PAGE */
+#daily #main-content
+{
+    background: var(--bg-radiant, linear-gradient(180deg, rgba(128, 196, 196, 0.78) 0%, rgba(79, 0, 248, 0.71) 98.96%));
+}
+#daily h1
+{
+    font-size: 4em;
 }

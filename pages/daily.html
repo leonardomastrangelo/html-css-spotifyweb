@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="../style.css">
+    <title>Cose</title>
+
+</head>
+<body id="daily">
+
+    <div class="wrapper">
+
+        <!-- CALL TO ACTION -->
+        <div id="call">
+            <div role="button" class="btn fw-500">
+                Effettua l'upgrade
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <main class="d-flex bg-main">
+            
+            <!-- SIDE-BAR -->
+            <nav class="bg-darker d-flex col-flex j-between" id="side-bar">
+
+                <div class="wt">
+                    <!-- logo -->
+                    <div class="px-20 py-30" id="logo">
+                        <a href="../index.html"><img src="../spotify/img/logo.svg" alt="logo"></a>
+                    </div>
+                    <img class="px-20 py-15" id="small-logo" src="../spotify/img/logo-small.svg" alt="logo">
+                    <!-- explore menù -->
+                    <ul class="explore px-20">
+                        <li>
+                            <a href="#">
+                                <img class="v-middle icon" src="../spotify/img/home.svg" alt="home">
+                                <span class="v-middle txt-light fs-little">Home</span>
+                            </a>
+                            <div class="v-line bg-high"></div>
+                        </li>
+                        <li class="py-10">
+                            <a href="#">
+                                <img class="v-middle icon" src="../spotify/img/search.svg" alt="search">
+                                <span class="v-middle txt-grey fs-little">Search</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <a href="#">
+                                    <img class="v-middle icon" src="../spotify/img/libreria.svg" alt="libraries">
+                                    <span class="v-middle txt-grey fs-little">Your Libreries</span>
+                                </a>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- playlist section -->
+                    <div class="ppl px-20 py-30">
+                        <h3 class="maiusc fs-root">playlist</h3>
+                        <div class="py-15">
+                            <i class="fa-sharp fa-solid fa-square-plus v-middle txt-grey"></i>
+                            <span class="v-middle txt-grey px-10">Create Playlist</span>
+                        </div>
+                        <ul>
+                            <li class="py-10">
+                                <a class="txt-grey fs-little" href="#">Playlist Name</a>
+                            </li>
+                            <li class="py-10">
+                                <a class="txt-grey fs-little" href="#">Playlist Name</a>
+                            </li>
+                            <li class="py-10">
+                                <a class="txt-grey fs-little" href="#">Playlist Name</a>
+                            </li>
+                            <li class="py-10">
+                                <a class="txt-grey fs-little" href="#">Playlist Name</a>
+                            </li>
+                            <li class="py-10">
+                                <a class="txt-grey fs-little" href="#">Playlist Name</a>
+                            </li>
+                            <li class="py-10">
+                                <a class="txt-grey fs-little" href="#">Playlist Name</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- user -->
+                <div class="wb px-20">
+                    <div class="download py-10 d-flex">
+                        <i class="fa-solid fa-cloud-arrow-down txt-grey"></i>
+                        <span href="#" class="txt-grey fs-little px-10">Installa App</span>
+                    </div>
+                    <div class="user py-10 d-flex">
+                        <div class="profile circle bg-grey d-flex">
+                            <img class="icon" src="../spotify/img/profile.svg" alt="profile">
+                        </div>
+                        <h3>
+                            <span href="#" class="px-10 txt-light fs-root">John Doe</span>
+                        </h3>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- MAIN CONTENT -->
+            <section id="main-content">
+
+                <nav>
+                    <section class="d-flex a-center">
+                        <div>
+                            <img class="fluid" src="../spotify/img/mixdaily.jpeg" alt="metal-lifting">
+                        </div>
+                        <div class="px-20">
+                            <span class="fs-little">Playlist</span>
+                            <h1 class="py-10">Daily Mix 1</h1>
+                            <span class="fs-little txt-grey">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, totam!</span>
+                            <div class="d-flex a-center">
+                                <div>
+                                    <i class="fa-brands fa-spotify"></i>
+                                    <span class="fs-little">Spotify</span>
+                                </div>
+                                <ul class="d-flex fs-little">
+                                    <li>
+                                        <span>&bullet;</span>
+                                        163.878 Mi piace
+                                    </li>
+                                    <li>
+                                        <span>&bullet;</span>
+                                        259 brani, <span class="txt-grey">circa 10 ore</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </section>
+                </nav>
+            </section>
+        </main>
+
+        <!-- PLAYBAR -->
+        <div class="bg-dark d-flex a-center px-20" id="play-bar">
+
+            <div class="left">
+                <div class="d-flex a-center">
+                    <div class="song-img">
+                        <img class="fluid" src="../spotify/img/sinister.jpeg" alt="sinister">
+                    </div>
+                    <div class="song-info px-10">
+                        <h5>Sinister</h5>
+                        <a href="#" class="txt-grey fs-little">Song Name</a>
+                    </div>
+                    <div class="px-20">
+                        <i class="fa-regular fa-heart txt-grey px-10"></i>
+                        <i class="fa-regular fa-folder txt-grey"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="play-btn">
+                    <ul class="d-flex a-center j-center">
+                        <li class="px-10">
+                            <a href="#"><i class="fa-solid fa-shuffle txt-light"></i></a>
+                        </li>
+                        <li class="px-10">
+                            <a href="#"><i class="fa-solid fa-backward-step txt-light"></i></a>
+                        </li>
+                        <li class="px-10">
+                            <a href="#"><i class="fa-regular fa-circle-play txt-light"></i></a>
+                        </li>
+                        <li class="px-10">
+                            <a href="#"><i class="fa-solid fa-forward-step txt-light"></i></a>
+                        </li>
+                        <li class="px-10">
+                            <a href="#"><i class="fa-solid fa-rotate-right txt-light"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="time-bar d-flex j-between a-center py-10">
+                    <div>
+                        0:25
+                    </div>
+                    <div class="pb bg-grey d-flex a-center">
+                        <div class="hv bg-lightgrey"></div>
+                        <div class="round bg-grey"></div>
+                    </div>
+                    <div>
+                        4:35
+                    </div>
+                </div>
+            </div>
+
+            <div class="right d-flex a-center">
+                <i class="fa-solid fa-list txt-light px-10"></i>
+                <i class="fa-solid fa-display txt-light px-10"></i>
+                <i class="fa-solid fa-volume-high txt-light px-10"></i>
+                <div class="vb bg-grey d-flex a-center">
+                    <div class="hv bg-lightgrey"></div>
+                    <div class="round bg-grey"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
