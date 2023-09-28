@@ -240,13 +240,14 @@ a:hover,
 .wb {
     height: 90px;
     background-color: var(--color-black);
-    
+
 }
 
 .ppl ul {
     height: 200px;
     overflow-y: auto;
 }
+
 /* overlay hover */
 .overlay {
     position: absolute;
@@ -289,29 +290,32 @@ h3 {
     font-size: 1.3em;
 }
 
-#main-content h3:hover
-{
+#main-content h3:hover {
     animation: up-down 1.1s cubic-bezier(0.34, 0.6, 1, 0.26) infinite;
 }
-@keyframes up-down
-{
-    0%{
+
+@keyframes up-down {
+    0% {
         transform: translateY(0);
-        
+
     }
-    25%{
+
+    25% {
         transform: translateY(1px);
         color: var(--color-highlight);
     }
-    50%{
+
+    50% {
         transform: translateY(0);
         color: var(--color-highlight);
     }
-    75%{
+
+    75% {
         transform: translateY(-2px);
     }
-    100%{
-        transform: translateY(0);  
+
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -350,24 +354,6 @@ h3 {
     top: 0;
     opacity: 1;
 }
-
-/* .wt
-{
-    height: calc(100% - 70px);
-    overflow: hidden;
-}
-
-.wb
-{
-    height: 70px;
-    overflow: hidden;
-}
-
-.ppl ul
-{
-    height: 300px;
-    overflow-y: auto;
-} */
 
 .icon {
     width: 30px;
@@ -497,6 +483,7 @@ h3 {
 }
 
 @media screen and (max-width: 576px) {
+
     .ppl,
     #logo {
         display: none;
@@ -540,96 +527,171 @@ h3 {
         width: 100%;
     }
 
-    #play-bar .middle
-    {
+    #play-bar .middle {
         width: 100%;
     }
-    
+
 }
 
 
 /* DAILY MIX PAGE */
-#daily #main-content
-{
+#daily #main-content {
     background: var(--bg-radiant, linear-gradient(180deg, rgba(128, 196, 196, 0.78) 0%, rgba(79, 0, 248, 0.71) 98.96%));
     padding-left: 0;
     padding-right: 0;
 }
-#daily h1
-{
+
+#daily h1 {
     font-size: 4em;
 }
-#daily #main-content ul li
-{
+
+#daily #main-content ul li {
     padding: 0 10px;
 }
-#daily .actions i
-{
+
+#daily .actions i {
     font-size: 3.8em;
     cursor: pointer;
 }
-#daily .table .col
-{
+
+#daily .table .col {
     width: calc(100% / 4);
 }
-#daily header
-{
+
+#daily header {
     border-bottom: 1px solid var(--color-grey);
 }
-.f-end
-{
+
+.f-end {
     justify-content: flex-end;
 }
-#daily .sx .col
-{
+
+#daily .sx .col {
     width: calc(100% / 2);
 }
-#daily .sx
-{
+
+#daily .sx {
     width: 50%;
 }
-#daily .dx
-{
+
+#daily .dx {
     width: 50%;
 }
-#daily .fa-solid.fa-play
-{
-    display: none; 
+
+#daily i-amp-video-eq {
+    display: none;
 }
-#daily .row:hover
-{
+
+#daily .row:hover {
     background-color: rgba(128, 128, 128, 0.5);
     border-radius: 5px;
 }
-#daily .row:hover .number
-{
+
+#daily .row:hover .number {
     display: none;
 }
-#daily .row:hover .fa-solid.fa-play
-{
-    display: block;
+
+#daily .row:hover i-amp-video-eq {
+    display: flex;
     color: var(--color-highlight);
 }
-#daily .table span:hover 
-{
+
+#daily .table span:hover {
     text-decoration: underline;
 }
-#daily .actions i:hover
-{
+
+#daily .actions i:hover {
     animation: bounce 1s ease-in-out infinite;
 }
-@keyframes bounce{
-    0%{
+
+@keyframes bounce {
+    0% {
         transform: scale(1);
         color: var(--color-white);
     }
-    50%{
+
+    50% {
         transform: scale(1.2);
         color: var(--color-highlight);
     }
-    100%{
+
+    100% {
         transform: scale(1);
         color: var(--color-white)
     }
 }
 
+
+i-amp-video-eq {
+    align-items: flex-end;
+    width: 20px;
+    height: 12px;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+i-amp-video-eq .-amp-video-eq-col {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    margin-right: 1px;
+}
+
+i-amp-video-eq .-amp-video-eq-col div {
+    animation-name: amp-video-eq-animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: #FAFAFA;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    will-change: transform;
+}
+
+.-amp-video-eq-1-1 {
+    animation-duration: 0.3s;
+}
+
+.-amp-video-eq-1-2 {
+    animation-duration: 0.45s;
+}
+
+.-amp-video-eq-2-1 {
+    animation-duration: 0.5s;
+}
+
+.-amp-video-eq-2-2 {
+    animation-duration: 0.4s;
+}
+
+.-amp-video-eq-3-1 {
+    animation-duration: 0.3s;
+}
+
+.-amp-video-eq-3-2 {
+    animation-duration: 0.35s;
+}
+
+.-amp-video-eq-4-1 {
+    animation-duration: 0.4s;
+}
+
+.-amp-video-eq-4-2 {
+    animation-duration: 0.25s;
+}
+
+@keyframes amp-video-eq-animation {
+    0% {
+        transform: translateY(100%);
+    }
+    50%{
+        background-color: var(--color-highlight);
+    }
+
+    100% {
+        transform: translateY(0);
+        background-color: #EC2F3A;
+    }
+}
