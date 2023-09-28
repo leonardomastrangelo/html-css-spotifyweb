@@ -164,8 +164,7 @@ main {
 
 #side-bar {
     width: 250px;
-    position: relative;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 #main-content {
@@ -233,6 +232,21 @@ a:hover,
     position: relative;
 }
 
+.wt {
+    height: calc(100% - 90px);
+    overflow: hidden;
+}
+
+.wb {
+    height: 90px;
+    background-color: var(--color-black);
+    
+}
+
+.ppl ul {
+    height: 200px;
+    overflow-y: auto;
+}
 /* overlay hover */
 .overlay {
     position: absolute;
@@ -337,6 +351,23 @@ h3 {
     opacity: 1;
 }
 
+/* .wt
+{
+    height: calc(100% - 70px);
+    overflow: hidden;
+}
+
+.wb
+{
+    height: 70px;
+    overflow: hidden;
+}
+
+.ppl ul
+{
+    height: 300px;
+    overflow-y: auto;
+} */
 
 .icon {
     width: 30px;
